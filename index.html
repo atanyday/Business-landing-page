@@ -12,7 +12,6 @@
     <!-- Bootstrap Core CSS -->
     <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
     <!-- Custom CSS -->
-    <script src="stylesheets/animate.min.css"></script>
     <link href="stylesheets/stylesheet.css" rel="stylesheet">
     <!--[if lt IE 9]>
 
@@ -29,14 +28,14 @@
         <div class="row">
             <div class="col-md-12 header-content">
                 <h1>Animated business page</h1>
-                <button type="button">learn more</button>
+                <a href="#scroll-to">learn more</a>
             </div>
         </div>
     </div>
 
     <!--===== Dog =====-->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="scroll-to">
         <div class="row" id="first-section">
             <div class="col-md-5 col-md-offset-1">
                 <h2>Aliquam eu orci sagittis purus vitae vestibulum ex.</h2>
@@ -55,7 +54,7 @@
                 <img class="img-responsive" src="images/dog.png" alt=""/>
             </div>
 
-            <!--===== Payment =====-->
+    <!--===== Payment =====-->
             <div class="col-md-12 h2-payment">
                 <h2>Choose your membership</h2>
             </div>
@@ -64,7 +63,7 @@
 
     <div class="container">
         <div class="row" id="payment-section">
-            <div class="col-md-4 card">
+            <div class="col-md-4 card" id="card-left">
                 <a href="#" onclick="return false">
                     <h4>Beginner</h4>
                     <p>
@@ -93,7 +92,7 @@
                     <button type="button">get started</button>
                 </a>
             </div>
-            <div class="col-md-4 card">
+            <div class="col-md-4 card" id="card-right">
                 <a href="#" onclick="return false">
                     <h4>Professional</h4>
                     <p>
@@ -110,9 +109,40 @@
         </div>
     </div>
 
+    <!--===== Iphone =====-->
+
+    <div class="container-fluid" id="iphone-section">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="iphone-img" src="images/iphone.png" alt=""/>
+            </div>
+            <div class="col-md-6 iphone-content-section">
+                <h3>ultra</h3>
+                <h5>modern design</h5>
+                <p><span class="quote">"</span> Donec molestie eros sapien, a faucibus tortor aliquam.
+                    Fusce a tortor sem. Aenean vitae velit nibh.
+                </p>
+                <p> Nam tristique augue dolor, ac sodales diam porttitor eu.
+                    Molestie massa sed lacus volutpat, et varius augue.
+                </p>
+                <p> Suspendisse vitae urna et neque sollicitudin placerat.
+                    Suspendisse varius a enim vel varius. <span class="quote">"</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--===== Footer =====-->
+
+    <div class="row no-margin">
+        <div class="col-md-12" id="footer">
+            <button type="button">get in touch</button>
+        </div>
+    </div>
+
 
     <!-- jQuery -->
-    <script src="jQuery/jquery-3.1.1.js"></script>
+    <script src="jQuery/jquery-3.1.1.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap/js/bootstrap.js"></script>
     <!-- Custom JavaScript -->

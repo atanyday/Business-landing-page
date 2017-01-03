@@ -1,7 +1,6 @@
 @import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/border-radius";
 
 @include font-face("???", font-files("???.ttf"));
-$upper-text: uppercase;
 $margin-default: 50px;
 $price-border-color: 1px solid #e2e5ec;
 $purple-color: #6657b3;
@@ -10,10 +9,11 @@ $purple-color: #6657b3;
 %p-font {
   font-size: 16px;
   line-height: 24px;
+  color: #000000
 }
 %h2-style {
   margin-top: $margin-default;
-  text-transform: $upper-text;
+  text-transform: uppercase;
   font-size: 28px;
   font-weight: bold;
 }
@@ -23,8 +23,8 @@ $purple-color: #6657b3;
   border: none;
   background-color: $purple-color;
   color: #ffffff;
-  text-transform: $upper-text;
-  font-size: 18px;
+  text-transform: uppercase;
+  font-size: 16px;
   padding: 15px 25px;
 }
 %default-button-white {
@@ -33,16 +33,14 @@ $purple-color: #6657b3;
   border: 1px solid $purple-color;
   color: $purple-color;
   background-color: transparent;
-  text-transform: $upper-text;
+  text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
   padding: 15px 25px;
 }
 %default-button-white-hover {
-  border: none;
   background-color: $purple-color;
   color: #ffffff;
-  font-size: 18px;
 }
 
 /* for Bootstrap */
@@ -67,34 +65,41 @@ body {
   background: url(../images/header-img.jpg) no-repeat center center;
   background-size: cover;
     .header-content {
-      text-transform: $upper-text;
+      text-transform: uppercase;
       text-align: center;
-      padding: 300px 0 450px 0;
+      padding: 245px 0 450px 0;
       color: #ffffff;
         h1 {
           font-size: 48px;
           font-weight: bold;
         }
-        button {
-          text-transform: $upper-text;
+        a {
+          position: relative;
+          top: 50px;
+          text-decoration: none;
+          text-transform: uppercase;
           @include border-radius(30px, 30px);
           font-size: 18px;
           margin-top: $margin-default;
           background-color: transparent;
           border: 1px solid #ffffff;
-          padding: 20px;
+          padding: 15px;
+          color: #ffffff;
+            &:hover {
+              background-color: lighten($purple-color, 10%);
+            }
         }
     }
 }
 //First-section dog
 #first-section {
-  margin: 100px 5px 50px 0px;
+  margin: 150px 5px 50px 0px;
   text-align: center;
     h2 {
       @extend %h2-style;
     }
   .h2-payment {
-    margin-top: 50px;
+    margin-top: 90px;
   }
     p {
       @extend %p-font;
@@ -102,6 +107,9 @@ body {
     }
   button {
     @extend %default-button-purple;
+      &:hover {
+        background-color: lighten($purple-color, 10%);
+      }
   }
 }
 //Second-section payment
@@ -111,7 +119,7 @@ body {
     border: 2px solid $purple-color;
     button {
       @extend %default-button-purple;
-      margin-top: $margin-default + 20px;
+      margin-top: 70px;
     }
     h4 {
       background-color: $purple-color;
@@ -128,21 +136,9 @@ body {
         text-decoration: none;
         color: black;
         display: inline-block;
-        &:hover {
-          background-color: #ffffff;
-          border: 2px solid $purple-color;
-          button {
-            @extend %default-button-purple;
-            margin-top: $margin-default + 20px;
-          }
-          h4 {
-            background-color: $purple-color;
-            color: #ffffff;
-          }
-        }
       }
       h4 {
-        text-transform: $upper-text;
+        text-transform: uppercase;
         padding: 10px 100px;
         background-color: #eceff2;
       }
@@ -174,6 +170,64 @@ body {
         &:hover {
           @extend %default-button-white-hover;
         }
+    }
+  }
+  #card-left,
+  #card-right {
+    a {
+      &:hover {
+        background-color: #ffffff;
+        border: 1px solid $purple-color;
+        h4 {
+          background-color: $purple-color;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+// Iphohe section
+#iphone-section {
+  background: url(../images/office.jpg) no-repeat center center;
+  background-size: cover;
+    .iphone-img {
+      display: block;
+      position: absolute;
+      top: 70px;
+      right: 215px;
+    }
+  .iphone-content-section {
+    padding: 120px 110px 160px 0px;
+    text-align: center;
+    color: #ffffff;
+    h3 {
+      text-transform: uppercase;
+      font-size: 40px;
+    }
+    h5 {
+      font-size: 24px;
+      padding-bottom: 50px;
+    }
+    .quote {
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      font-style: italic;
+      padding-bottom: 30px;
+    }
+  }
+}
+//Footer
+#footer {
+  button {
+    @extend %default-button-white;
+    margin: 40px 10px 20px auto;
+    float: right;
+    &:hover {
+      @extend %default-button-white-hover;
     }
   }
 }
