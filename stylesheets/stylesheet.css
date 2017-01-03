@@ -67,13 +67,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "???";
   src: url('../fonts/???.ttf') format('truetype');
 }
-/* line 9, ../sass/stylesheet.scss */
+/* line 10, ../sass/stylesheet.scss */
 #first-section p, #payment-section .card p {
   font-size: 16px;
   line-height: 24px;
 }
 
-/* line 13, ../sass/stylesheet.scss */
+/* line 14, ../sass/stylesheet.scss */
 #first-section h2 {
   margin-top: 50px;
   text-transform: uppercase;
@@ -81,8 +81,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
 }
 
-/* line 19, ../sass/stylesheet.scss */
-#first-section button {
+/* line 20, ../sass/stylesheet.scss */
+#first-section button, #payment-section #central-card button, #payment-section .card a:hover button {
   margin-top: 30px;
   -moz-border-radius: 30px / 30px;
   -webkit-border-radius: 30px 30px;
@@ -95,7 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 15px 25px;
 }
 
-/* line 29, ../sass/stylesheet.scss */
+/* line 30, ../sass/stylesheet.scss */
 #payment-section .card button {
   margin: 70px 0 20px 0;
   -moz-border-radius: 30px / 30px;
@@ -110,57 +110,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 15px 25px;
 }
 
+/* line 41, ../sass/stylesheet.scss */
+#payment-section .card button:hover {
+  border: none;
+  background-color: #6657b3;
+  color: #ffffff;
+  font-size: 18px;
+}
+
 /* for Bootstrap */
-/* line 42, ../sass/stylesheet.scss */
+/* line 49, ../sass/stylesheet.scss */
 .no-margin {
   margin: 0 !important;
 }
 
-/* line 43, ../sass/stylesheet.scss */
+/* line 50, ../sass/stylesheet.scss */
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
 
 /**/
-/* line 48, ../sass/stylesheet.scss */
+/* line 55, ../sass/stylesheet.scss */
 .left {
   float: left;
 }
 
-/* line 49, ../sass/stylesheet.scss */
+/* line 56, ../sass/stylesheet.scss */
 .right {
   float: right;
 }
 
-/* line 51, ../sass/stylesheet.scss */
+/* line 58, ../sass/stylesheet.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 55, ../sass/stylesheet.scss */
+/* line 62, ../sass/stylesheet.scss */
 body {
   background-color: #ffffff;
 }
 
-/* line 59, ../sass/stylesheet.scss */
+/* line 66, ../sass/stylesheet.scss */
 #header {
   background: url(../images/header-img.jpg) no-repeat center center;
   background-size: cover;
 }
-/* line 62, ../sass/stylesheet.scss */
+/* line 69, ../sass/stylesheet.scss */
 #header .header-content {
   text-transform: uppercase;
   text-align: center;
   padding: 300px 0 450px 0;
   color: #ffffff;
 }
-/* line 67, ../sass/stylesheet.scss */
+/* line 74, ../sass/stylesheet.scss */
 #header .header-content h1 {
   font-size: 48px;
   font-weight: bold;
 }
-/* line 71, ../sass/stylesheet.scss */
+/* line 78, ../sass/stylesheet.scss */
 #header .header-content button {
   text-transform: uppercase;
   -moz-border-radius: 30px / 30px;
@@ -173,54 +181,89 @@ body {
   padding: 20px;
 }
 
-/* line 83, ../sass/stylesheet.scss */
+/* line 90, ../sass/stylesheet.scss */
 #first-section {
   margin: 100px 5px 50px 0px;
   text-align: center;
 }
-/* line 89, ../sass/stylesheet.scss */
+/* line 96, ../sass/stylesheet.scss */
 #first-section .h2-payment {
   margin-top: 50px;
 }
-/* line 92, ../sass/stylesheet.scss */
+/* line 99, ../sass/stylesheet.scss */
 #first-section p {
   margin-top: 50px;
 }
 
-/* line 102, ../sass/stylesheet.scss */
+/* line 109, ../sass/stylesheet.scss */
+#payment-section #central-card {
+  background-color: #ffffff;
+  border: 2px solid #6657b3;
+}
+/* line 112, ../sass/stylesheet.scss */
+#payment-section #central-card button {
+  margin-top: 70px;
+}
+/* line 116, ../sass/stylesheet.scss */
+#payment-section #central-card h4 {
+  background-color: #6657b3;
+  color: #ffffff;
+}
+/* line 121, ../sass/stylesheet.scss */
 #payment-section .card {
+  background-color: #fcfcfe;
   text-align: center;
   margin-bottom: 100px;
   border: 1px solid #e2e5ec;
   padding: 0;
 }
-/* line 107, ../sass/stylesheet.scss */
+/* line 127, ../sass/stylesheet.scss */
+#payment-section .card a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+/* line 131, ../sass/stylesheet.scss */
+#payment-section .card a:hover {
+  background-color: #ffffff;
+  border: 2px solid #6657b3;
+}
+/* line 134, ../sass/stylesheet.scss */
+#payment-section .card a:hover button {
+  margin-top: 70px;
+}
+/* line 138, ../sass/stylesheet.scss */
+#payment-section .card a:hover h4 {
+  background-color: #6657b3;
+  color: #ffffff;
+}
+/* line 144, ../sass/stylesheet.scss */
 #payment-section .card h4 {
   text-transform: uppercase;
   padding: 10px 100px;
   background-color: #eceff2;
 }
-/* line 112, ../sass/stylesheet.scss */
+/* line 149, ../sass/stylesheet.scss */
 #payment-section .card p {
   padding: 25px 50px;
 }
-/* line 117, ../sass/stylesheet.scss */
+/* line 154, ../sass/stylesheet.scss */
 #payment-section .card .price .dollar {
   position: relative;
   display: inline-block;
   bottom: 15px;
-  font-size: 18px;
+  font-size: 26px;
 }
-/* line 123, ../sass/stylesheet.scss */
+/* line 160, ../sass/stylesheet.scss */
 #payment-section .card .price .price-amount {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
 }
-/* line 128, ../sass/stylesheet.scss */
+/* line 165, ../sass/stylesheet.scss */
 #payment-section .card ul {
   margin-top: 10px;
 }
-/* line 130, ../sass/stylesheet.scss */
+/* line 167, ../sass/stylesheet.scss */
 #payment-section .card ul li {
   border-bottom: 1px solid #e2e5ec;
   padding: 15px;
