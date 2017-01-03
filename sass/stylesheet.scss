@@ -41,6 +41,22 @@ $purple-color: #6657b3;
   background-color: $purple-color;
   color: #ffffff;
 }
+%a-style {
+  position: relative;
+  top: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include border-radius(30px, 30px);
+  font-size: 18px;
+  margin-top: $margin-default;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 15px;
+  color: #ffffff;
+    &:hover {
+      background-color: lighten($purple-color, 10%);
+    }
+}
 
 /* for Bootstrap */
 .no-margin {margin: 0 !important}
@@ -51,11 +67,6 @@ $purple-color: #6657b3;
 /**/
 .left {float: left;}
 .right {float: right;}
-a {
-  &:hover {
-    text-decoration: none;
-  }
-}
 body {
   background-color: #ffffff;
   font-family: 'Abel', sans-serif;
@@ -73,22 +84,9 @@ body {
           font-size: 48px;
           font-weight: bold;
         }
-        a {
-          position: relative;
-          top: 50px;
-          text-decoration: none;
-          text-transform: uppercase;
-          @include border-radius(30px, 30px);
-          font-size: 18px;
-          margin-top: $margin-default;
-          background-color: transparent;
-          border: 1px solid #ffffff;
-          padding: 15px;
-          color: #ffffff;
-            &:hover {
-              background-color: lighten($purple-color, 10%);
-            }
-        }
+      a {
+        @extend %a-style;
+      }
     }
 }
 //First-section dog
@@ -238,12 +236,29 @@ body {
 }
 //Footer
 #footer {
-  button {
-    @extend %default-button-white;
-    margin: 40px 10px 20px auto;
+  a {
+    @extend %a-style;
     float: right;
-    &:hover {
-      @extend %default-button-white-hover;
-    }
+    margin: 40px 5px 40px 0px;
+    top: 0px;
+    bottom: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid $purple-color;
+    color: $purple-color;
+      &:hover {
+        color: #ffffff;
+      }
   }
+}
+
+/* @media */
+@include mq($max-width: 1199px) {
+
+}
+@include mq($max-width: 991px) {
+
+}
+@include mq($max-width: 768px) {
+
 }
