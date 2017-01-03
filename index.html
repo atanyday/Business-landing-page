@@ -11,6 +11,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    <!-- animate.css -->
+    <link href="stylesheets/animate.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="stylesheets/stylesheet.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -48,10 +50,10 @@
                     Quisque cursus odio lacus, ac hendrerit ipsum tempor non. Curabitur dictum quam nisi, et euismod
                     dui pharetra in.
                 </p>
-                <button type="button">download</button>
+                <button type="button" id="learn-button">download</button>
             </div>
             <div class="col-md-5 col-md-offset-1">
-                <img class="img-responsive" src="images/dog.png" alt=""/>
+                <img class="img-responsive" id="dog" src="images/dog.png" alt=""/>
             </div>
 
     <!--===== Payment =====-->
@@ -119,13 +121,13 @@
             <div class="col-md-6 iphone-content-section">
                 <h3>ultra</h3>
                 <h5>modern design</h5>
-                <p><span class="quote">"</span> Donec molestie eros sapien, a faucibus tortor aliquam.
+                <p id="iphone-section-first"><span class="quote">"</span> Donec molestie eros sapien, a faucibus tortor aliquam.
                     Fusce a tortor sem. Aenean vitae velit nibh.
                 </p>
-                <p> Nam tristique augue dolor, ac sodales diam porttitor eu.
+                <p id="iphone-section-second"> Nam tristique augue dolor, ac sodales diam porttitor eu.
                     Molestie massa sed lacus volutpat, et varius augue.
                 </p>
-                <p> Suspendisse vitae urna et neque sollicitudin placerat.
+                <p id="iphone-section-third"> Suspendisse vitae urna et neque sollicitudin placerat.
                     Suspendisse varius a enim vel varius. <span class="quote">"</span>
                 </p>
             </div>
@@ -145,6 +147,8 @@
     <script src="jQuery/jquery-3.1.1.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap/js/bootstrap.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="js/index.js"></script>
     </body>
