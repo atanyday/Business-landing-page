@@ -206,132 +206,135 @@ body {
 /* line 115, ../sass/stylesheet.scss */
 #payment-section #central-card {
   background-color: #ffffff;
-  border: 2px solid #6657b3;
   z-index: 10;
 }
-/* line 119, ../sass/stylesheet.scss */
+/* line 118, ../sass/stylesheet.scss */
 #payment-section #central-card a {
-  border: none;
+  border: 2px solid #6657b3;
 }
-/* line 122, ../sass/stylesheet.scss */
+/* line 121, ../sass/stylesheet.scss */
 #payment-section #central-card button {
   margin-top: 70px;
 }
-/* line 126, ../sass/stylesheet.scss */
+/* line 125, ../sass/stylesheet.scss */
 #payment-section #central-card h4 {
   background-color: #6657b3;
   color: #ffffff;
   font-size: 14px;
 }
-/* line 132, ../sass/stylesheet.scss */
+/* line 131, ../sass/stylesheet.scss */
 #payment-section .card {
-  background-color: #fcfcfe;
   text-align: center;
   margin-bottom: 100px;
   padding: 0;
 }
-/* line 137, ../sass/stylesheet.scss */
+/* line 135, ../sass/stylesheet.scss */
 #payment-section .card a {
   border: 1px solid #e2e5ec;
   text-decoration: none;
   color: black;
   display: inline-block;
 }
-/* line 143, ../sass/stylesheet.scss */
+/* line 141, ../sass/stylesheet.scss */
 #payment-section .card h4 {
   text-transform: uppercase;
   padding: 10px 100px;
   background-color: #eceff2;
 }
-/* line 148, ../sass/stylesheet.scss */
+/* line 146, ../sass/stylesheet.scss */
 #payment-section .card p {
   padding: 25px 50px;
 }
-/* line 153, ../sass/stylesheet.scss */
+/* line 151, ../sass/stylesheet.scss */
 #payment-section .card .price .dollar {
   position: relative;
   display: inline-block;
   bottom: 15px;
   font-size: 26px;
 }
-/* line 159, ../sass/stylesheet.scss */
+/* line 157, ../sass/stylesheet.scss */
 #payment-section .card .price .price-amount {
   font-size: 50px;
   font-weight: bold;
 }
-/* line 164, ../sass/stylesheet.scss */
+/* line 162, ../sass/stylesheet.scss */
 #payment-section .card ul {
   margin-top: 10px;
 }
-/* line 166, ../sass/stylesheet.scss */
+/* line 164, ../sass/stylesheet.scss */
 #payment-section .card ul li {
   border-bottom: 1px solid #e2e5ec;
   padding: 15px;
 }
-/* line 178, ../sass/stylesheet.scss */
+/* line 176, ../sass/stylesheet.scss */
 #payment-section #card-left,
 #payment-section #card-right {
   -webkit-animation-delay: 0.20s;
 }
-/* line 182, ../sass/stylesheet.scss */
+/* line 179, ../sass/stylesheet.scss */
+#payment-section #card-left a,
+#payment-section #card-right a {
+  background-color: #fcfcfe;
+}
+/* line 181, ../sass/stylesheet.scss */
 #payment-section #card-left a:hover,
 #payment-section #card-right a:hover {
   background-color: #ffffff;
   border: 1px solid #6657b3;
 }
-/* line 185, ../sass/stylesheet.scss */
+/* line 184, ../sass/stylesheet.scss */
 #payment-section #card-left a:hover h4,
 #payment-section #card-right a:hover h4 {
   background-color: #6657b3;
   color: #ffffff;
 }
 
-/* line 194, ../sass/stylesheet.scss */
+/* line 193, ../sass/stylesheet.scss */
 #iphone-section {
   background: url(../images/office.jpg) no-repeat center center;
   background-size: cover;
 }
-/* line 197, ../sass/stylesheet.scss */
+/* line 196, ../sass/stylesheet.scss */
 #iphone-section .iphone-img {
   -webkit-animation-delay: 1.7s;
   display: block;
   position: absolute;
   top: 70px;
-  right: 215px;
+  left: 20%;
 }
-/* line 204, ../sass/stylesheet.scss */
+/* line 203, ../sass/stylesheet.scss */
 #iphone-section .iphone-content-section {
   padding: 120px 110px 160px 0px;
   text-align: center;
   color: #ffffff;
 }
-/* line 208, ../sass/stylesheet.scss */
+/* line 207, ../sass/stylesheet.scss */
 #iphone-section .iphone-content-section #iphone-section-first {
   -webkit-animation-delay: 0.2s;
 }
-/* line 211, ../sass/stylesheet.scss */
+/* line 210, ../sass/stylesheet.scss */
 #iphone-section .iphone-content-section #iphone-section-second {
   -webkit-animation-delay: 0.6s;
 }
-/* line 214, ../sass/stylesheet.scss */
+/* line 213, ../sass/stylesheet.scss */
 #iphone-section .iphone-content-section #iphone-section-third {
   -webkit-animation-delay: 0.9s;
 }
-/* line 217, ../sass/stylesheet.scss */
+/* line 216, ../sass/stylesheet.scss */
 #iphone-section .iphone-content-section h3 {
   text-transform: uppercase;
   font-size: 40px;
 }
-/* line 221, ../sass/stylesheet.scss */
+/* line 220, ../sass/stylesheet.scss */
 #iphone-section .iphone-content-section h5 {
   font-size: 24px;
   padding-bottom: 50px;
 }
-/* line 225, ../sass/stylesheet.scss */
+/* line 224, ../sass/stylesheet.scss */
 #iphone-section .iphone-content-section .quote {
   font-size: 24px;
 }
-/* line 228, ../sass/stylesheet.scss */
+/* line 227, ../sass/stylesheet.scss */
 #iphone-section .iphone-content-section p {
   font-size: 18px;
   line-height: 24px;
@@ -340,7 +343,7 @@ body {
   padding-bottom: 30px;
 }
 
-/* line 239, ../sass/stylesheet.scss */
+/* line 238, ../sass/stylesheet.scss */
 #footer a {
   float: right;
   margin: 40px 5px 40px 0px;
@@ -351,9 +354,64 @@ body {
   border: 1px solid #6657b3;
   color: #6657b3;
 }
-/* line 249, ../sass/stylesheet.scss */
+/* line 248, ../sass/stylesheet.scss */
 #footer a:hover {
   color: #ffffff;
 }
 
 /* @media */
+@media only screen and (max-width: 991px) {
+  /* line 257, ../sass/stylesheet.scss */
+  #first-section {
+    margin: 60px 5px 30px 0px;
+  }
+  /* line 259, ../sass/stylesheet.scss */
+  #first-section h2 {
+    margin-top: 5px;
+    font-size: 24px;
+  }
+
+  /* line 266, ../sass/stylesheet.scss */
+  #iphone-section .iphone-img {
+    top: 140px;
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 274, ../sass/stylesheet.scss */
+  #header .header-content {
+    padding: 250px 0 300px 0;
+    color: #ffffff;
+  }
+
+  /* line 280, ../sass/stylesheet.scss */
+  #first-section {
+    margin: 10px 0;
+  }
+  /* line 282, ../sass/stylesheet.scss */
+  #first-section .h2-payment {
+    margin-top: 10px;
+  }
+  /* line 285, ../sass/stylesheet.scss */
+  #first-section p {
+    margin-top: 50px;
+  }
+  /* line 288, ../sass/stylesheet.scss */
+  #first-section button {
+    margin: 10px 0px;
+  }
+
+  /* line 295, ../sass/stylesheet.scss */
+  #payment-section #central-card button {
+    margin-top: 70px;
+  }
+
+  /* line 302, ../sass/stylesheet.scss */
+  #iphone-section .iphone-img {
+    display: none;
+  }
+  /* line 305, ../sass/stylesheet.scss */
+  #iphone-section .iphone-content-section {
+    padding: 120px 20px 160px 20px;
+  }
+}
