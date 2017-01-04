@@ -30,9 +30,9 @@ $(document).ready(function() {
     }, {offset: '100%'});
 
     //Iphone
-    $(".iphone-img").waypoint(function () {
-        $('.iphone-img').toggleClass('animated bounceInDown');
-    }, {offset: '100%'});
+    //$(".iphone-img").waypoint(function () {
+    //    $('.iphone-img').toggleClass('animated bounceInDown');
+    //}, {offset: '100%'});
     $("#iphone-section-first").waypoint(function () {
         $('#iphone-section-first').toggleClass('animated fadeInRight');
     }, {offset: '100%'});
@@ -44,3 +44,10 @@ $(document).ready(function() {
     }, {offset: '100%'});
 });
 
+// remove animate css 768px
+
+
+
+$(".iphone-img").waypoint(function () {
+    $('.iphone-img').toggleClass('animated bounceInDown');
+}, {offset: '100%'});
