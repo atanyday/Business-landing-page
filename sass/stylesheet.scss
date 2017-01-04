@@ -1,4 +1,4 @@
-@import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/border-radius";
+@import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/border-radius", "compass/css3/transition";
 
 @include font-face("Abel", font-files("Abel.ttf"));
 $margin-default: 50px;
@@ -40,6 +40,7 @@ $purple-color: #6657b3;
 %default-button-white-hover {
   background-color: $purple-color;
   color: #ffffff;
+  transition: $default-transition-duration;
 }
 %a-style {
   position: relative;
@@ -55,6 +56,7 @@ $purple-color: #6657b3;
   color: #ffffff;
     &:hover {
       background-color: lighten($purple-color, 10%);
+      transition: $default-transition-duration;
     }
 }
 
@@ -107,6 +109,7 @@ body {
     @extend %default-button-purple;
       &:hover {
         background-color: lighten($purple-color, 10%);
+        transition: $default-transition-duration;
       }
   }
 }
