@@ -1,6 +1,4 @@
 # Business-landing-page
-My own design of[Animated business page](https://rawgit.com/Annelia55/Business-landing-page/master/index.html). It was created with SASS/Compass and Bbootstrap 3. Adapted for mobile phones.
-<br>
-[Demo video](https://youtu.be/Z5z5p3VeZz0?list=PLYup6nD6ExHLlQV4glVRHe_xTrZdKI7X7)
+My own design of[Animated business page](https://rawgit.com/anelliabe/Business-landing-page/master/index.html). It was created with SASS/Compass and Bbootstrap 3. Adapted for mobile phones.
 <br>
 ![Picture](Main.jpg)
