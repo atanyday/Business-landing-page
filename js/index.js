@@ -30,17 +30,17 @@ $(document).ready(function() {
     }, {offset: '100%'});
 
     //Iphone
-    //$(".iphone-img").waypoint(function () {
-    //    $('.iphone-img').toggleClass('animated bounceInDown');
+    //$(".iphone-section__img").waypoint(function () {
+    //    $('.iphone-section__img').toggleClass('animated bounceInDown');
     //}, {offset: '100%'});
-    $("#iphone-section-first").waypoint(function () {
-        $('#iphone-section-first').toggleClass('animated fadeInRight');
+    $("#iphone-section__line1").waypoint(function () {
+        $('#iphone-section__line1').toggleClass('animated fadeInRight');
     }, {offset: '100%'});
-    $("#iphone-section-second").waypoint(function () {
-        $('#iphone-section-second').toggleClass('animated fadeInRight');
+    $("#iphone-section__line2").waypoint(function () {
+        $('#iphone-section__line2').toggleClass('animated fadeInRight');
     }, {offset: '100%'});
-    $("#iphone-section-third").waypoint(function () {
-        $('#iphone-section-third').toggleClass('animated fadeInRight');
+    $("#iphone-section__line3").waypoint(function () {
+        $('#iphone-section__line3').toggleClass('animated fadeInRight');
     }, {offset: '100%'});
 });
 
@@ -48,6 +48,6 @@ $(document).ready(function() {
 
 
 
-$(".iphone-img").waypoint(function () {
-    $('.iphone-img').toggleClass('animated bounceInDown');
+$(".iphone-section__img").waypoint(function () {
+    $('.iphone-section__img').toggleClass('animated bounceInDown');
 }, {offset: '100%'});

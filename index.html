@@ -1,157 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
-    <meta name="description" content=""/>
-    <meta name="author" content=""/>
-
-    <title>Business page</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
-    <!-- animate.css -->
-    <link href="stylesheets/animate.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="stylesheets/stylesheet.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-
-    <!--<script src="stylesheets/print.css"></script>-->
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0">
+<meta name="description" content=""/>
+<meta name="author" content=""/>
+<title>Animated landing page</title>
+<!-- Bootstrap Core CSS -->
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+<!-- animate.css -->
+<link href="stylesheets/animate.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="stylesheets/stylesheet.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<!--<script src="stylesheets/print.css"></script>-->
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 </head>
-    <body>
-    <!--===== Header =====-->
-
+  <body>
+    <!--===== HEADER =====-->
     <div class="container-fluid" id="header">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12 header-content">
-                <h1>Animated business page</h1>
-                <a href="#scroll-to">learn more</a>
-            </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 header__content">
+          <h1>Animated business page</h1>
+          <a href="#scroll-to">learn more</a>
         </div>
     </div>
+  </div>
 
-    <!--===== Dog =====-->
-
-    <div class="container-fluid" id="scroll-to">
-        <div class="row" id="first-section">
-            <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
-                <h2>Aliquam eu orci sagittis purus vitae vestibulum ex.</h2>
-                <p>
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                    Phasellus euismod leo aliquet mauris eleifend lobortis. Curabitur lobortis imperdiet mattis.
-                    In commodo elit id erat pretium molestie. Morbi condimentum, mauris eu posuere dictum, magna
-                    nulla consectetur velit, non cursus nisi nibh quis velit. Suspendisse at pulvinar felis.
-                    Pellentesque enim nulla, placerat sed tellus et, dignissim porta nisl. In eu suscipit ipsum.
-                    Quisque cursus odio lacus, ac hendrerit ipsum tempor non. Curabitur dictum quam nisi, et euismod
-                    dui pharetra in.
-                </p>
-                <button type="button" id="learn-button">download</button>
-            </div>
-            <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
-                <img class="img-responsive" id="dog" src="images/dog.png" alt=""/>
-            </div>
-
-    <!--===== Payment =====-->
-            <div class="col-md-12 col-sm-12 col-sm-offset-0 col-xs-9 col-xs-offset-2 h2-payment">
-                <h2>Choose your membership</h2>
-            </div>
-        </div>
+    <!--===== DOG SECTION =====-->
+  <div class="container-fluid" id="scroll-to">
+    <div class="row" id="dog-section">
+      <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+        <h2>Aliquam eu orci sagittis purus vitae vestibulum ex.</h2>
+        <p>
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Phasellus euismod leo aliquet mauris eleifend lobortis. Curabitur lobortis imperdiet mattis.
+        In commodo elit id erat pretium molestie. Morbi condimentum, mauris eu posuere dictum, magna
+        nulla consectetur velit, non cursus nisi nibh quis velit. Suspendisse at pulvinar felis.
+        Pellentesque enim nulla, placerat sed tellus et, dignissim porta nisl. In eu suscipit ipsum.
+        Quisque cursus odio lacus, ac hendrerit ipsum tempor non. Curabitur dictum quam nisi, et euismod
+        dui pharetra in.
+        </p>
+        <button type="button" id="button_download">download</button>
+      </div>
+      <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+        <img class="img-responsive" id="dog" src="images/dog.png" alt=""/>
+      </div>
     </div>
+  </div>
 
-    <div class="container">
-        <div class="row" id="payment-section">
-            <div class="col-md-4 col-sm-4 col-xs-12 card" id="card-left">
-                <a href="#" onclick="return false">
-                    <h4>Beginner</h4>
-                    <p>
-                        Pellentesque at lacus et justo interdum aliquet eget quis est.</p>
-                    <p class="price"><span class="dollar">$</span> <span class="price-amount">17</span> <span class="month">/month</span></p>
-                    <ul>
-                        <li>Praesent tincidunt nec turpis</li>
-                        <li>Maecenas porta sed enim quis posuere</li>
-                        <li>Phasellus mauris arcu ultricies</li>
-                    </ul>
-                    <button type="button">get started</button>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12 card" id="central-card">
-                <a href="#" onclick="return false">
-                    <h4>Medium</h4>
-                    <p>
-                        Pellentesque at lacus et justo interdum aliquet eget quis est.</p>
-                    <p class="price"><span class="dollar">$</span> <span class="price-amount">25</span> <span class="month">/month</span></p>
-                    <ul>
-                        <li>Suspendisse vel fermentum</li>
-                        <li>Fusce maximus libero nec</li>
-                        <li>Maecenas eros risus</li>
-                        <li>Pellentesque hendrerit urna</li>
-                    </ul>
-                    <button type="button">get started</button>
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12 card" id="card-right">
-                <a href="#" onclick="return false">
-                    <h4>Professional</h4>
-                    <p>
-                        Pellentesque at lacus et justo interdum aliquet eget quis est.</p>
-                    <p class="price"><span class="dollar">$</span> <span class="price-amount">50</span> <span class="month">/month</span></p>
-                    <ul>
-                        <li>Praesent tincidunt nec turpis</li>
-                        <li>Maecenas porta sed enim quis posuere</li>
-                        <li>Phasellus mauris arcu ultricies</li>
-                    </ul>
-                    <button type="button">get started</button>
-                </a>
-            </div>
-        </div>
+  <!--===== PAYMENT SECTION =====-->
+  <div class="container" id="payment-section">
+    <div class="row" >
+      <div class="col-md-12 col-sm-12 col-sm-offset-0 col-xs-9 col-xs-offset-2">
+        <h2 class="payment-section__title">Choose your membership</h2>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 payment-section__cards" id="card-left">
+        <a href="#" onclick="return false">
+          <h4>Beginner</h4>
+          <p>Pellentesque at lacus et justo interdum aliquet eget quis est.</p>
+          <p class="payment-section__cards_price"><span class="dollar">$</span> <span class="payment-section__cards_price-amount">17</span> <span class="month">/month</span></p>
+          <ul>
+            <li>Praesent tincidunt nec turpis</li>
+            <li>Maecenas porta sed enim quis posuere</li>
+            <li>Phasellus mauris arcu ultricies</li>
+          </ul>
+          <button type="button">get started</button>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 payment-section__cards" id="card-central">
+        <a href="#" onclick="return false">
+          <h4>Medium</h4>
+          <p>Pellentesque at lacus et justo interdum aliquet eget quis est.</p>
+          <p class="payment-section__cards_price"><span class="dollar">$</span> <span class="payment-section__cards_price-amount">25</span> <span class="month">/month</span></p>
+          <ul>
+            <li>Suspendisse vel fermentum</li>
+            <li>Fusce maximus libero nec</li>
+            <li>Maecenas eros risus</li>
+            <li>Pellentesque hendrerit urna</li>
+          </ul>
+          <button type="button">get started</button>
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 payment-section__cards" id="card-right">
+        <a href="#" onclick="return false">
+          <h4>Professional</h4>
+          <p>Pellentesque at lacus et justo interdum aliquet eget quis est.</p>
+          <p class="payment-section__cards_price"><span class="dollar">$</span> <span class="payment-section__cards_price-amount">50</span> <span class="month">/month</span></p>
+          <ul>
+            <li>Praesent tincidunt nec turpis</li>
+            <li>Maecenas porta sed enim quis posuere</li>
+            <li>Phasellus mauris arcu ultricies</li>
+          </ul>
+          <button type="button">get started</button>
+        </a>
+      </div>
     </div>
+  </div>
 
-    <!--===== Iphone =====-->
-
-    <div class="container-fluid" id="iphone-section">
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <img class="img-responsive iphone-img" src="images/iphone.png" alt=""/>
-            </div>
-            <div class="col-md-6 col-sm-6 iphone-content-section">
-                <h3>ultra</h3>
-                <h5>modern design</h5>
-                <p id="iphone-section-first"><span class="quote">"</span> Donec molestie eros sapien, a faucibus tortor aliquam.
-                    Fusce a tortor sem. Aenean vitae velit nibh.
-                </p>
-                <p id="iphone-section-second"> Nam tristique augue dolor, ac sodales diam porttitor eu.
-                    Molestie massa sed lacus volutpat, et varius augue.
-                </p>
-                <p id="iphone-section-third"> Suspendisse vitae urna et neque sollicitudin placerat.
-                    Suspendisse varius a enim vel varius. <span class="quote">"</span>
-                </p>
-            </div>
-        </div>
+  <!--===== IPHONE SECTION =====-->
+  <div class="container-fluid" id="iphone-section">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <img class="img-responsive iphone-section__img" src="images/iphone.png" alt=""/>
+      </div>
+      <div class="col-md-6 col-sm-6 iphone-section__content">
+        <h3>ultra</h3>
+          <h5>modern design</h5>
+          <p id="iphone-section__line1"><span class="quote">"</span> Donec molestie eros sapien, a faucibus tortor aliquam.
+          Fusce a tortor sem. Aenean vitae velit nibh.</p>
+          <p id="iphone-section__line2"> Nam tristique augue dolor, ac sodales diam porttitor eu.
+          Molestie massa sed lacus volutpat, et varius augue.</p>
+          <p id="iphone-section__line3"> Suspendisse vitae urna et neque sollicitudin placerat.
+          Suspendisse varius a enim vel varius. <span class="quote">"</span></p>
+      </div>
     </div>
+  </div>
 
-    <!--===== Footer =====-->
-
-    <div class="row no-margin">
-        <div class="col-md-12 col-sm-12 col-xs-12" id="footer">
-            <a href="#header">back to top</a>
-        </div>
+  <!--===== FOOTER =====-->
+  <div class="row no-margin">
+    <div class="col-md-12 col-sm-12 col-xs-12" id="footer">
+      <a href="#header">back to top</a>
     </div>
+  </div>
 
-
-    <!-- jQuery -->
-    <script src="jQuery/jquery-3.1.1.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/index.js"></script>
-    </body>
+  <!-- jQuery -->
+  <script src="jQuery/jquery-3.1.1.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <!-- Waypoints -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="js/index.js"></script>
+  </body>
 </html>
 
 

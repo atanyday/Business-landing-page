@@ -2,13 +2,14 @@
 
 @include font-face("Abel", font-files("Abel.ttf"));
 $margin-default: 50px;
-$price-border-color: 1px solid #e2e5ec;
+$light-grey-color: 1px solid #e2e5ec;
 $purple-color: #6657b3;
+$black-color: #000000;
 
 %p-font {
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
+  color: $black-color;
 }
 %h2-style {
   margin-top: $margin-default;
@@ -60,24 +61,24 @@ $purple-color: #6657b3;
     }
 }
 
-/* for Bootstrap */
+// ------------------------------------------------------------------------------------------------------- FOR BOOTSTRAP
 .no-margin {margin: 0 !important}
 .no-gutter > [class*='col-'] {
   padding-right:0;
   padding-left:0;
 }
-/**/
+// -------------------------------------------------------------------------------------------------------------- GLOBAL
 .left {float: left;}
 .right {float: right;}
 body {
   background-color: #ffffff;
   font-family: 'Abel', sans-serif;
 }
-// Header
+// -------------------------------------------------------------------------------------------------------------- HEADER
 #header {
   background: url(../images/header-img.jpg) no-repeat center center;
   background-size: cover;
-    .header-content {
+    .header__content {
       text-transform: uppercase;
       text-align: center;
       padding: 250px 0 460px 0;
@@ -91,15 +92,12 @@ body {
       }
     }
 }
-//First-section dog
-#first-section {
+// --------------------------------------------------------------------------------------------------------- DOG SECTION
+#dog-section {
   margin: 150px 5px 50px 0px;
   text-align: center;
     h2 {
       @extend %h2-style;
-    }
-  .h2-payment {
-    margin-top: 90px;
     }
     p {
       @extend %p-font;
@@ -113,9 +111,15 @@ body {
       }
   }
 }
-//Second-section payment
+// ----------------------------------------------------------------------------------------------------- PAYMENT SECTION
 #payment-section {
-  #central-card {
+  .payment-section__title {
+    margin-top: 90px;
+    padding-bottom: 30px;
+    @extend %h2-style;
+    text-align: center;
+  }
+  #card-central {
     background-color: #ffffff;
     z-index: 10;
     a {
@@ -131,12 +135,12 @@ body {
       font-size: 14px;
     }
   }
-  .card {
+  .payment-section__cards {
     text-align: center;
     margin-bottom: 100px;
     padding: 0;
       a {
-        border: $price-border-color;
+        border: $light-grey-color;
         text-decoration: none;
         color: black;
         display: inline-block;
@@ -150,14 +154,14 @@ body {
         @extend %p-font;
         padding: 25px 50px;
       }
-      .price {
+      .payment-section__cards_price {
         .dollar {
           position: relative;
           display: inline-block;
           bottom: 15px;
           font-size: 26px;
         }
-        .price-amount {
+        .payment-section__cards_price-amount {
           font-size: 50px;
           font-weight: bold;
         }
@@ -165,7 +169,7 @@ body {
     ul {
       margin-top: 10px;
       li {
-        border-bottom: $price-border-color;
+        border-bottom: $light-grey-color;
         padding: 15px;
       }
     }
@@ -196,24 +200,24 @@ body {
 #iphone-section {
   background: url(../images/office.jpg) no-repeat center center;
   background-size: cover;
-    .iphone-img {
+    .iphone-section__img {
       -webkit-animation-delay: 1.7s;
       display: block;
       position: absolute;
       top: 70px;
       left: 20%;
     }
-  .iphone-content-section {
+  .iphone-section__content {
     padding: 120px 110px 160px 0px;
     text-align: center;
     color: #ffffff;
-    #iphone-section-first {
+    #iphone-section__line1 {
       -webkit-animation-delay: 0.2s;
     }
-    #iphone-section-second {
+    #iphone-section__line2 {
       -webkit-animation-delay: 0.6s;
     }
-    #iphone-section-third {
+    #iphone-section__line3 {
       -webkit-animation-delay: 0.9s;
     }
     h3 {
@@ -257,7 +261,7 @@ body {
 /* @media */
 @include mq($max-width: 991px) {
   //First-section dog
-  #first-section {
+  #dog-section {
     margin: 60px 5px 30px 0px;
     h2 {
       margin-top: 5px;
@@ -266,7 +270,7 @@ body {
   }
   // Iphohe section
   #iphone-section {
-    .iphone-img {
+    .iphone-section__img {
       top: 140px;
       left: 10%;
     }
@@ -274,15 +278,15 @@ body {
 }
 @include mq($max-width: 768px) {
   #header {
-    .header-content {
+    .header__content {
       padding: 250px 0 300px 0;
       color: #ffffff;
     }
   }
   //First-section dog
-  #first-section {
+  #dog-section {
     margin: 10px 0;
-    .h2-payment {
+    .payment-section__title {
       margin-top: 10px;
     }
     p {
@@ -294,7 +298,7 @@ body {
   }
   //Second-section payment
   #payment-section {
-    #central-card {
+    #card-central {
       button {
         margin-top: 70px;
       }
@@ -302,10 +306,10 @@ body {
   }
   // Iphohe section
   #iphone-section {
-    .iphone-img {
+    .iphone-section__img {
       display: none;
     }
-    .iphone-content-section {
+    .iphone-section__content {
       padding: 120px 20px 160px 20px;
     }
   }
